@@ -1,0 +1,18 @@
+<div class="cards">
+  <div *ngIf="this.router.url === '/games'" class="search-field">
+    <label for="search-box" class="form-label">Search games:</label>
+    <input #searchBox id="search-box" type="text" class="form-control mb-3" placeholder="Search Games" (input)="search(searchBox.value)" />
+  </div>
+  <h2 *ngIf="this.router.url === '/games'">Featured Games</h2>
+  <div class="d-flex">
+    <div class="cards-block">
+      <div class="card-group justify-content-evenly">
+        <app-card *ngFor="let game of games$ | async" [game]="game" (add)="addGameToLibrary(game)"></app-card>
+      </div>
+
+      <mat-paginator [length]="this.gamesNumber" [pageSize]="15" [pageSizeOptions]="[15, 30, 45]" (page)="OnPageChange($event)">
+      </mat-paginator>
+    </div>
+    <app-sidebar class="sidebar" *ngIf="this.router.url === '/games'" (check)="filterByTag($event)" (range)="filterPrice($event)"></app-sidebar>
+  </div>
+</div>

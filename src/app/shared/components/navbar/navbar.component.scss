@@ -1,0 +1,35 @@
+.header-block {
+  height: 66px;
+  color: black;
+}
+
+.navbar {
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.nav-link {
+  font-size: 1rem;
+
+  &:hover {
+    color: #6C69FF !important;
+  }
+}
+
+.btn-outline-primary {
+  border-color: #6C69FF;
+  color: #6C69FF;
+
+  &:hover {
+    background-color: #6C69FF;
+    color: white;
+  }
+}
+
+.nav-link.active {
+  color: #6C69FF !important;
+}
+
+.navbar-toggler {
+  color: #6C69FF;
+  border-color: #6C69FF;
+}

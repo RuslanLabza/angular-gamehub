@@ -1,0 +1,28 @@
+<aside class="sidebar-wrapper">
+  <div class="mb-3" [formGroup]="costForm">
+    <p class="form-label mb-1">Cost:</p>
+    <input min="10" max="1000" type="range" class="form-range" id="range" formControlName="costSlider" (change)="filterPrice(this.costForm.value.costSlider)">
+    <label for="customRange1" class="form-label">{{this.costForm.value.costSlider}}</label>
+  </div>
+
+  <form [formGroup]="checkboxForm">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="indie" id="indie-option" formControlName="indie" (change)="togleTag(this.checkboxForm.value)">
+      <label class="form-check-label" for="indie-option">
+        Indie
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="action" id="action-option" formControlName="action" (change)="togleTag(this.checkboxForm.value)">
+      <label class="form-check-label" for="action-option">
+        Action
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="adventure" id="adventure-option" formControlName="adventure" (change)="togleTag(this.checkboxForm.value)">
+      <label class="form-check-label" for="adventure-option">
+        Adventure
+      </label>
+    </div>
+  </form>
+</aside>
