@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- '10'
+
+before_install:
+- npm install -g @angular/cli
+install: npm install
+
+branches:
+  only:
+  - master
+
+
+
+deploy:
+  provider: heroku
+  app: lab-project-steam
+  api_key:
+    secure: "13959ec4-b280-43ea-8284-fb0c726bca32"

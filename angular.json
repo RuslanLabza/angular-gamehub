@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "lab-angular-project": {
+    "lab-angular-project-github-version": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/lab-angular-project",
+            "outputPath": "dist/lab-angular-project-github-version",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -77,10 +77,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "lab-angular-project:build:production"
+              "browserTarget": "lab-angular-project-github-version:build:production"
             },
             "development": {
-              "browserTarget": "lab-angular-project:build:development"
+              "browserTarget": "lab-angular-project-github-version:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -88,7 +88,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "lab-angular-project:build"
+            "browserTarget": "lab-angular-project-github-version:build"
           }
         },
         "test": {
@@ -113,5 +113,5 @@
       }
     }
   },
-  "defaultProject": "lab-angular-project"
+  "defaultProject": "lab-angular-project-github-version"
 }

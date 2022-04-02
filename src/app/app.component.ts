@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'lab-angular-project';
+  title = 'lab-angular-project-github-version';
 }
