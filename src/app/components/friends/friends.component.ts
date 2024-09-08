@@ -17,7 +17,7 @@ export class FriendsComponent implements OnInit {
   constructor(private userService: UserService) { }
 
   ngOnInit(): void {
-    this.getfriends();
+    this.getFriends();
     this.users$ = this.searchTerms$$.pipe(
       debounceTime(300),
       distinctUntilChanged(),
@@ -34,7 +34,7 @@ export class FriendsComponent implements OnInit {
     this.searchTerms$$.next(term);
   }
 
-  getfriends(): void {
+  getFriends(): void {
     const friendsIds: Array<number> = JSON.parse(sessionStorage.getItem("user")!).friends;
 
     friendsIds.forEach(friendId => {
