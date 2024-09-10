@@ -127,4 +127,4 @@ For testing purposes, you can use the following credentials until August 10, 202
 
 Ruslan Labza - [LinkedIn](https://www.linkedin.com/in/ruslanlabza)
 
-Project Link: [https://github.com/RuslanLabza/angular-template-driven-form](https://github.com/RuslanLabza/angular-template-driven-form)
+Project Link: [https://github.com/RuslanLabza/angular-gamehub](https://github.com/RuslanLabza/angular-gamehub)
